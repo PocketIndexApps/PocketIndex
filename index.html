@@ -88,12 +88,13 @@
       padding: 3.25rem 0 3.5rem;
     }
     .hero-brand {
-      display: inline-flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: fit-content;
+      margin: 0 auto 2.5rem;
       text-decoration: none;
-      margin-bottom: 2.5rem;
     }
     .hero-logo {
       width: 120px;
@@ -120,6 +121,10 @@
     }
     .hero-brand:hover .hero-brand-name {
       color: var(--accent);
+    }
+    .hero-badge-wrap {
+      display: flex;
+      justify-content: center;
     }
     .badge-pill {
       display: inline-flex;
@@ -624,8 +629,10 @@
         <span class="hero-brand-name" data-i18n="heroBrandName">PocketIndex: Review &amp; Collect</span>
       </a>
 
-      <div class="badge-pill">
-        <span data-i18n="heroBadge">★ Smart Archiving • Personal Reviews • Buy-Again Verdicts • Collection Value Tracking</span>
+      <div class="hero-badge-wrap">
+        <div class="badge-pill">
+          <span data-i18n="heroBadge">★ Smart Archiving • Personal Reviews • Buy-Again Verdicts • Collection Value Tracking</span>
+        </div>
       </div>
       <h1 data-i18n-html="heroTitle">Keep inventory of what you love. Know if you'd <span>buy it again</span>.</h1>
       <p>
